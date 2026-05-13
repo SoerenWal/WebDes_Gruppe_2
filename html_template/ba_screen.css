@@ -50,10 +50,10 @@ body {
 
 /* ID-Selektoren */
 #wrapper {
-    width: fit-content;
     margin: 0 auto;
     padding: 20px;
-    background-color: white;
+    width: 1fr;
+    background-image: url("programming.jpg");
 }
 
 #footer {
