@@ -11,38 +11,11 @@ body {
 }
 
 /* Elementselektoren */
-#header h1, 
-#header h2 {
-    margin-bottom: 20px;
-    text-align: center;
-}
 
-#navigation ul {
-    list-style: none;
-    text-align: center;
-}
-
-#navigation li {
-    display: inline-block;
-    margin: 10px;
-}
-
-.level_1{
-	counter-reset:counter_level_1;
-}
-
-.level_1:before{
-	content:counter(counter_level_1) ". ";
-	counter-increment:counter_level_1;
-}
-
-.level_2{
-	counter-reset:counter_level_2;
-}
-
-.level_2:before{
-	content:counter(counter_level_1) "." counter(counter_level_2) " ";
-	counter-increment:counter_level_2;
+nav ul li {
+    float: left;
+    list-style-type: none;
+    margin-right: 5vw;
 }
 
 /* Klassen-Selektoren */
