@@ -7,7 +7,7 @@ export default function MyApp() {
       <CssBaseline enableColorScheme/>
       {/* The rest of your application */}
       {/*Sichtbarer Content*/}
-      <body>
+      {/*<body>
         <header>
           <nav>
             <ul>
@@ -71,7 +71,7 @@ export default function MyApp() {
           <p>Eventuelle Modernisierung / Trends</p>
 
         </div> <!-- wrapper -->
-      </body>
+      </body>*/}
           </React.Fragment>
   );
 }
