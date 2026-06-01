@@ -1,5 +1,6 @@
 import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
+import Box from '@mui/material/Box';
 
 export default function MyApp() {
   return (
@@ -7,6 +8,12 @@ export default function MyApp() {
       <CssBaseline enableColorScheme/>
       {/* The rest of your application */}
       {/*Sichtbarer Content*/}
+      <Box>
+        <h1>Der Silberturm</h1>
+      </Box>
+      </React.Fragment>
+  );
+}
       {/*<body>
         <header>
           <nav>
@@ -72,6 +79,4 @@ export default function MyApp() {
 
         </div> <!-- wrapper -->
       </body>*/}
-          </React.Fragment>
-  );
-}
+          
