@@ -1,5 +1,13 @@
 /* Kommentar im CSS-Block */
 /* All-Selektor */
+:root {
+    --light-grey: rgb(172, 181, 188);
+    --grey: rgb(124, 140, 151);
+    --light-blue: rgb(91, 112, 127);
+    --blue: rgb(65, 89, 107);
+    --dark-blue: rgb(41, 65, 81);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -7,15 +15,6 @@
 
 body {
     font-family: 'Times New Roman', serif sans-serif;
-}
-
-.home {  
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-area: home;
 }
 
 header {
@@ -26,9 +25,9 @@ header {
     position: fixed;
     z-index: 2;
     color: white;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(41, 65, 81, 0.5);
     font-size: 3vw;
-    text-shadow: black -0.5px -0.5px 0;  
+    text-shadow: var(--dark-blue) -1px -1px 0;
 }
 
 ul {
@@ -61,7 +60,7 @@ ul {
     color: white;
     position: absolute;
     font-size: 4vw;
-    text-shadow: black -1px -1px 0;
+    text-shadow: var(--dark-blue) -1px -1px 0;
     top: 15vw;
     left: 2vw
 }
@@ -78,8 +77,8 @@ ul {
     background-color: rgba(222, 222, 222, 0,5);
 }
 
-.wrapper {
-    background-color: black;
+article {
+    background-color: var(--dark-blue);
     color: white;
 }
 
@@ -87,27 +86,46 @@ article img {
     width: 30%;
 }
 
-.scroll-section {
-  height: 300vh; /* wichtig: genug Scrollstrecke */
+.text-box {
+  padding: 10px;
+  background: linear-gradient(135deg, var(--light-grey), var(--blue));
+  color: #f5f5f5;
+
+  border-radius: 15px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.sticky {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Hover-Effekt */
+.text-box:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.8),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
-.content {
-  position: absolute;
-  opacity: 0;
-  transition: opacity 0.4s ease;
+/* Titel innerhalb der Box */
+.text-box h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #ffffff;
 }
 
-.content.active {
-  opacity: 1;
+.titel_abschnitt {
+    text-align: center;
+}
+
+#fakten {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    padding-bottom: 60px;
+}
+
+.fakten_titel {
+    width: 100vw;
 }
 
 
