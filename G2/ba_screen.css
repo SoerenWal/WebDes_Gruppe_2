@@ -14,6 +14,10 @@ body {
 address{
     text-align: center;
     margin-top: 20px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 10px;
+    width: 50%;
 }
 
 /* Elementselektoren */
@@ -24,6 +28,9 @@ address{
 }
 #navigation {
     border: 1px solid rgb(0, 76, 255);
+    position: relative;
+    top: 50%;
+    bottom: 50%;
 }
 #navigation ul {
     list-style: none;
@@ -33,6 +40,8 @@ address{
 #navigation li {
     display: inline-block;
     margin: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
 }
 
 /* Klassen-Selektoren */
