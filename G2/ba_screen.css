@@ -7,16 +7,24 @@
 
 body {
     font-family: 'Times New Roman', serif sans-serif;
-    background-color: black;
+    background-image: url("assets/main_vorhang.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+address{
+    text-align: center;
+    margin-top: 20px;
 }
 
 /* Elementselektoren */
-#header h1, 
-#header h2 {
+#header {
     margin-bottom: 20px;
     text-align: center;
+    color: white;
 }
-
+#navigation {
+    border: 1px solid rgb(0, 76, 255);
+}
 #navigation ul {
     list-style: none;
     text-align: center;
@@ -35,5 +43,4 @@ body {
     margin: 0 auto;
     padding: 20px;
     width: 50%;
-    background-color: rgba(255, 255, 255);
 }
