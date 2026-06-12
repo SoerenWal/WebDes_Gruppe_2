@@ -1,0 +1,131 @@
+/* Kommentar im CSS-Block */
+/* All-Selektor */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Elementselektoren */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Times New Roman', serif sans-serif;
+    background-image: url(assets/altstadt.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 2600px;
+}
+
+h1, h2{
+    height: 60px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: white;
+    font-family: 'Times New Roman', Times, serif, Arial;
+}
+
+h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);;
+}
+
+p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif, Arial;
+}
+
+a{
+    color: white;
+}
+
+#navigation ul {
+    list-style: none;
+    text-align: center;
+}
+
+#navigation li {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Klassenselektoren */
+.content_row{
+    height: 450px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image_container{
+    width: 400px;
+    height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.image_container:hover{
+    scale: (1.05);
+}
+
+.default_text{
+    width: 600px;
+    height: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+/* ID-Selektoren */
+#wrapper {
+    margin: 0 auto;
+    width: 1200px;;
+    height:100%;
+    background-color: #2C2523;
+    border: 2px solid #E9E5D9;
+}
+
+#navigation{
+    display: flex;
+    color: white;
+    border-top: 2px solid #E9E5D9;
+    border-bottom: 2px solid #E9E5D9;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#navigation a{
+    text-decoration: none;
+}
+
+#navigation a:hover{
+    color: gold;
+}
+
+#header{
+    height: 7%;
+    padding-left: 7%;
+    background-image: url(assets/header_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    font-size: 2em;
+    align-items: center;
+}
+
+#footer {
+    border-top: 1px solid #000000;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
