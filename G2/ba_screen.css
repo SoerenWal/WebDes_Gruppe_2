@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Times New Roman', serif sans-serif;
-    background-image: url("assets/main_vorhang.gif");
+    /*background-image: url("assets/main_vorhang.gif");*/
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -52,4 +52,13 @@ address{
     margin: 0 auto;
     padding: 20px;
     width: 50%;
+}
+
+#vorhang {
+    position: absolute;
+    z-index: +1;
+}
+
+#vorhang:active {
+    z-index: -1;
 }
