@@ -7,11 +7,11 @@
 
 body {
     font-family: 'Times New Roman', serif sans-serif;
-    background-image: url("assets/main_vorhang.gif");
+    /*background-image: url("assets/main_vorhang.gif");*/
     background-size: cover;
     background-repeat: no-repeat;
 }
-address{
+address {
     text-align: center;
     margin-top: 20px;
     color: rgb(255, 255, 255);
@@ -26,6 +26,7 @@ address{
     text-align: center;
     color: white;
 }
+
 #navigation {
     border: 1px solid rgb(0, 76, 255);
     position: relative;
@@ -40,7 +41,6 @@ address{
 #navigation li {
     display: inline-block;
     margin: 10px;
-    background-color: rgb(255, 255, 255);
     border-radius: 15px;
 }
 
@@ -52,4 +52,12 @@ address{
     margin: 0 auto;
     padding: 20px;
     width: 50%;
+}
+
+#vorhang {
+    position: absolute;
+}
+
+#vorhang:active {
+    z-index: -100;
 }

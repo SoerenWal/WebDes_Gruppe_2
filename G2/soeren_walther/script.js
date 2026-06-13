@@ -1,5 +1,5 @@
 const pickers = document.querySelectorAll(".colorpicker");
-const ausblick = document.getElementById("ausblick");
+const ausblick = document.getElementById("ausblick-wahl");
 
 pickers.forEach(picker => {
     picker.addEventListener("click", () => {
