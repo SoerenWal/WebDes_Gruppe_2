@@ -4,20 +4,11 @@
 }
 
 body {
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
-    background-position: center;
     background-color: black;
     background-repeat: no-repeat;
     background-image: url(assets/kino_licht_sanft.gif);
-
-}
-address {
-    text-align: center;
-    margin-top: 20px;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    bottom: 10px;
-    width: 50%;
 }
 
 dt img {
@@ -36,19 +27,19 @@ a:hover{
     cursor: pointer;
 }
 
-
 #header {
-    margin-top: 350px;
+    margin-top: 280px;
     text-align: center;
     color: #ffffff;
 }
+
 #header h1{
     margin-bottom: 30px;
-    font-size: 3rem;
+    font-size: 48px;
 }
 
 #header h2{
-    font-size: 2rem;
+    font-size: 32px;
 }
 
 #navigation {
@@ -63,12 +54,10 @@ a:hover{
 
 #navigation li {
     display: inline-block;
-    margin: 15px;
+    margin: 10px;
     border-radius: 15px;
 }
 
 #wrapper {
-    margin: 0 auto;
-    padding: auto;
 }
 
