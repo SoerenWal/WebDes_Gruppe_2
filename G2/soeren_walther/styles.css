@@ -21,12 +21,29 @@ body {
 header {
     position: fixed;
     width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: space-around;
-    color: white;
-    align-items: center;
+    z-index: +1;
+    background-color: var(--dark);
+}
+
+#navbar {
     font-size: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    color: var(--light);
+}
+
+#navbar li {
+    padding: 1%;
+}
+
+#logo {
+    font-weight: 900;
+}
+
+#navbar a {
+    color: var(--light);
+    text-decoration: none;
 }
 
 header li:hover {
@@ -35,6 +52,7 @@ header li:hover {
 
 #home {
     height: 100vw;
+    padding-top: 10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,16 +65,7 @@ header li:hover {
 
 #home img {
     border-radius: 10px;
-}
-
-ul {
-    display: flex;
-    list-style: none;
-}
-
-a {
-    color: white;
-    text-decoration: none;
+    width: 50%;
 }
 
 /* HERO */
