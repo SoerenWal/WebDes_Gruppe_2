@@ -11,7 +11,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-address{
+address {
     text-align: center;
     margin-top: 20px;
     color: rgb(255, 255, 255);
@@ -26,6 +26,7 @@ address{
     text-align: center;
     color: white;
 }
+
 #navigation {
     border: 1px solid rgb(0, 76, 255);
     position: relative;
@@ -56,9 +57,8 @@ address{
 
 #vorhang {
     position: absolute;
-    z-index: +1;
 }
 
 #vorhang:active {
-    z-index: -1;
+    z-index: -999;
 }
