@@ -11,6 +11,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 address {
     text-align: center;
     margin-top: 20px;
@@ -20,7 +21,6 @@ address {
     width: 50%;
 }
 
-/* Elementselektoren */
 #header {
     margin-bottom: 20px;
     text-align: center;
@@ -32,6 +32,7 @@ address {
     top: 220px;
 
 }
+
 #navigation ul {
     list-style: none;
     text-align: center;
