@@ -21,32 +21,32 @@ body {
 header {
     position: fixed;
     width: 100%;
-    height: 5%;
+    height: 10%;
     display: flex;
     justify-content: space-around;
-    padding: 0px 10px 10px 10px;
-    padding-bottom: 0px;
-    background: var(--dark);
     color: white;
-    z-index: 100;
     align-items: center;
-    border: 0.5px solid var(--light);
-    font-size: 4vh;
+    font-size: 3vh;
 }
 
 header li:hover {
     background-color: var(--blue);
 }
 
-#start {
+#home {
+    height: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#start p {
+#home p {
     color: white;
     font-family: Roboto
+}
+
+#home img {
+    border-radius: 10px;
 }
 
 ul {
