@@ -1,0 +1,284 @@
+/* Reset für eigene Eigenschaften */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: Segoe UI, sans-serif;
+  background: linear-gradient(270deg, #0f172a, #020617, #1e3a8a);
+  background-size: 600% 600%;
+  animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {background-position: 0%}
+  50% {background-position: 100%}
+  100% {background-position: 0%}
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+h2 {
+  margin-bottom: 18px;
+  font-size: 2rem;
+}
+
+h3 {
+  margin-bottom: 12px;
+}
+
+h4 {
+  margin-bottom: 8px;
+  color: #0f766e;
+  font-size: 1rem;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+img, video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+object {
+  width: 100%;
+  max-width: 330px;
+  height: 330px;
+}
+
+a {
+  color: inherit;
+}
+
+#hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+#hero h1 {
+  max-width: 800px;
+  margin: 8px 0 18px 0;
+  font-size: 4.4rem;
+}
+
+.hero-text {
+  max-width: 660px;
+  font-size: 1.25rem;
+  color: #e0f2fe;
+}
+
+.label {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #0f766e;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+}
+
+#hero .label {
+  color: #a7f3d0;
+}
+
+.path-nav a {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.path-nav a:hover {
+  transform: translateY(-2px);
+}
+
+.hero-arrow {
+  position: absolute;
+  bottom: 34px;
+  left: 50%;
+  width: 32px;
+  height: 32px;
+  opacity: 0.85;
+  transform: translateX(-50%);
+  transition: 0.2s;
+}
+
+.hero-arrow:hover {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-4px);
+}
+
+.hero-arrow img {
+  width: 32px;
+  height: 32px;
+  border-radius: 0;
+}
+
+#wrapper {
+  width: 86%;
+  max-width: 1120px;
+  margin: 40px auto 50px auto;
+}
+
+.path-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+}
+
+.path-nav a {
+  padding: 10px 14px;
+  color: #0f766e;
+  background: #ecfeff;
+  font-weight: 700;
+}
+
+.station {
+  margin-bottom: 28px;
+  padding: 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.09);
+}
+
+.intro {
+  max-width: 860px;
+  font-size: 1.05rem;
+}
+
+.note {
+  margin: 16px 0 22px 0;
+  padding: 16px;
+  color: #3b2f05;
+  background: #fef3c7;
+  border-radius: 8px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  width: 100%;
+}
+
+.media-row {
+  margin-top: 20px;
+}
+
+.osmosis-row {
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+.box,
+.concept-card,
+details {
+  border: 1px solid #dbe8ea;
+  border-radius: 8px;
+  background: #f8fbfc;
+}
+
+.box {
+  padding: 18px;
+  text-align: center;
+}
+
+.concept-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.concept-card {
+  padding: 16px;
+  transition: 0.2s;
+}
+
+.concept-card:hover,
+.box:hover {
+  border-color: #14b8a6;
+  box-shadow: 0 12px 24px rgba(20, 184, 166, 0.12);
+}
+
+.concept-card h3 {
+  color: #0f766e;
+}
+
+#osmosisCanvas {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: #0b3558;
+}
+
+.osmosis-video {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.check-list {
+  display: grid;
+  gap: 12px;
+}
+
+details {
+  padding: 14px 16px;
+}
+
+summary {
+  color: #0f766e;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+details p {
+  margin: 12px 0 0 0;
+}
+
+@media (max-width: 900px) {
+  #hero h1 {
+    font-size: 3rem;
+  }
+
+  #wrapper {
+    width: 92%;
+  }
+
+  .station {
+    padding: 22px;
+  }
+
+  .row,
+  .concept-grid,
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}

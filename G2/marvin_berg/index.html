@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>Ausflug in die Zelle</title>
+<meta charset="utf-8"/>
+<meta name="description" content="Lernpfad zum Zellaufbau und zur Osmose" />
+<meta name="keywords" content="Biologie, Zelle, Osmose, Oberstufe" />
+<meta name="author" content="Marvin Berg" />
+<link href="assets/favicon.ico" rel="shortcut icon" />
+<link href="css.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="hero">
+  <p class="label">Biologie Lernpfad</p>
+  <h1>Ausflug in die Zelle</h1>
+  <p class="hero-text">Verstehe Schritt f&uuml;r Schritt, wie eine Zelle aufgebaut ist und warum Wasser bei der Osmose in Bewegung ger&auml;t.</p>
+  <a class="hero-arrow" href="#lernpfad" aria-label="Zum Lernpfad springen">
+    <img src="assets/Pfeil.svg" alt="" width="32" height="32">
+  </a>
+</div>
+
+<div id="wrapper">
+  <div id="lernpfad" class="path-nav">
+    <a href="#station-1">1. Orientierung</a>
+    <a href="#station-2">2. Zellaufbau</a>
+    <a href="#station-3">3. Osmose</a>
+    <a href="#station-4">4. Selbstcheck</a>
+  </div>
+
+  <section id="station-1" class="station">
+    <p class="label">Station 1</p>
+    <h2>Warum Zellen wichtig sind</h2>
+    <p class="intro">
+      Zellen sind die kleinsten lebenden Bausteine eines Organismus. In ihnen laufen Stoffwechsel, Wachstum,
+      Informationsspeicherung und Energieumwandlung ab. Wenn du den Aufbau einer Zelle verstehst, kannst du
+      viele biologische Prozesse leichter erkl&auml;ren.
+    </p>
+    <div class="note">
+      <strong>Merksatz:</strong> Die Form einer Zelle passt zu ihrer Aufgabe. Trotzdem besitzen viele Zellen
+      &auml;hnliche Grundstrukturen.
+    </div>
+  </section>
+
+  <section id="station-2" class="station">
+    <p class="label">Station 2</p>
+    <h2>Wie ist eine Zelle aufgebaut?</h2>
+    <p class="intro">
+      Eine Zelle ist kein leerer Raum, sondern ein geordnetes System. Die Zellmembran grenzt sie nach au&szlig;en ab,
+      das Cytoplasma f&uuml;llt den Innenraum, und Organellen &uuml;bernehmen bestimmte Aufgaben.
+    </p>
+
+    <div class="row media-row">
+      <div class="box">
+        <h3>Modell einer Zelle</h3>
+        <object data="assets/Cell.svg" type="image/svg+xml" width="300" height="300"></object>
+      </div>
+      <div class="box">
+        <h3>Reales Zellbild</h3>
+        <img src="assets/Cell_real.jpg" alt="Mikroskopisches Bild einer Zelle" width="600" height="726">
+      </div>
+    </div>
+
+    <div class="concept-grid">
+      <div class="concept-card">
+        <h3>Zellmembran</h3>
+        <p>Sie grenzt die Zelle ab und kontrolliert, welche Stoffe hinein- oder hinausgelangen.</p>
+      </div>
+      <div class="concept-card">
+        <h3>Cytoplasma</h3>
+        <p>Diese gelartige Grundsubstanz f&uuml;llt die Zelle und erm&ouml;glicht Stofftransport im Inneren.</p>
+      </div>
+      <div class="concept-card">
+        <h3>Zellkern</h3>
+        <p>Er enth&auml;lt die DNA und steuert viele Vorg&auml;nge, zum Beispiel Wachstum und Zellteilung.</p>
+      </div>
+      <div class="concept-card">
+        <h3>Mitochondrien</h3>
+        <p>Sie wandeln Energie aus N&auml;hrstoffen in nutzbare Energie f&uuml;r die Zelle um.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="station-3" class="station">
+    <p class="label">Station 3</p>
+    <h2>Osmose leicht erkl&auml;rt</h2>
+    <p class="intro">
+      Osmose ist die gerichtete Bewegung von Wasser durch eine semipermeable Membran. Diese Membran l&auml;sst
+      Wasser hindurch, h&auml;lt aber viele gel&ouml;ste Teilchen zur&uuml;ck. Wasser bewegt sich dabei meistens zu der Seite,
+      auf der mehr gel&ouml;ste Teilchen vorhanden sind.
+    </p>
+
+    <div class="note">
+      <strong>Merksatz:</strong> Wasser wandert dorthin, wo die Konzentration gel&ouml;ster Stoffe h&ouml;her ist.
+      Dadurch kann eine Zelle Wasser aufnehmen oder abgeben.
+    </div>
+
+    <div class="row media-row osmosis-row">
+      <div class="box osmosis-card">
+        <h3>Canvas-Animation</h3>
+        <canvas id="osmosisCanvas" width="600" height="360" role="img" aria-label="Animation der Osmose: Wassermolek&uuml;le bewegen sich durch eine semipermeable Membran in eine Zelle.">
+          Dein Browser unterst&uuml;tzt das Canvas-Element nicht.
+        </canvas>
+      </div>
+      <div class="box osmosis-card">
+        <h3>Osmose im Video</h3>
+        <div class="video-grid">
+          <div class="video-item">
+            <h4>Wasser str&ouml;mt in die Zelle</h4>
+            <video class="osmosis-video" controls>
+              <source src="assets/Roh_Schwamm-Aufsaugen.mp4" type="video/mp4">
+              Das Video kann nicht geladen werden.
+            </video>
+          </div>
+          <div class="video-item">
+            <h4>Wasser str&ouml;mt aus der Zelle</h4>
+            <video class="osmosis-video" controls>
+              <source src="assets/Roh_Schwamm-Verlassen.mp4" type="video/mp4">
+              Das Video kann nicht geladen werden.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="station-4" class="station">
+    <p class="label">Station 4</p>
+    <h2>Selbstcheck</h2>
+    <div class="check-list">
+      <details>
+        <summary>Warum ist die Zellmembran f&uuml;r Osmose entscheidend?</summary>
+        <p>Weil sie als semipermeable Grenze wirkt: Wasser kann hindurch, viele gel&ouml;ste Stoffe nicht.</p>
+      </details>
+      <details>
+        <summary>In welche Richtung bewegt sich Wasser bei der Osmose?</summary>
+        <p>Zur Seite mit der h&ouml;heren Konzentration gel&ouml;ster Teilchen, bis ein Ausgleich entsteht.</p>
+      </details>
+      <details>
+        <summary>Was passiert mit einer Zelle, wenn sie viel Wasser aufnimmt?</summary>
+        <p>Sie wird gr&ouml;&szlig;er und baut Druck auf. Bei Pflanzenzellen sorgt dieser Druck f&uuml;r Stabilit&auml;t.</p>
+      </details>
+    </div>
+  </section>
+</div>
+
+<script>
+  const osmosisCanvas = document.getElementById("osmosisCanvas");
+
+  if (osmosisCanvas) {
+    const ctx = osmosisCanvas.getContext("2d");
+    let frame = 0;
+
+    const water = Array.from({ length: 36 }, () => ({
+      x: Math.random() * 260 + 20,
+      y: Math.random() * 250 + 55,
+      speed: Math.random() * 0.45 + 0.35,
+      wave: Math.random() * Math.PI * 2
+    }));
+
+    function drawLabel(text, x, y) {
+      ctx.fillStyle = "rgba(255, 255, 255, 0.9)";
+      ctx.font = "16px Segoe UI, sans-serif";
+      ctx.textAlign = "center";
+      ctx.fillText(text, x, y);
+    }
+
+    function drawScene() {
+      ctx.clearRect(0, 0, 600, 360);
+
+      ctx.fillStyle = "#0b3558";
+      ctx.fillRect(0, 0, 600, 360);
+
+      ctx.fillStyle = "rgba(72, 187, 120, 0.18)";
+      ctx.beginPath();
+      ctx.ellipse(440, 190, 115, 95, 0, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.strokeStyle = "#7dd3fc";
+      ctx.lineWidth = 5;
+      ctx.stroke();
+
+      ctx.fillStyle = "rgba(255, 255, 255, 0.25)";
+      ctx.fillRect(285, 45, 8, 270);
+
+      for (let y = 65; y < 310; y += 48) {
+        ctx.beginPath();
+        ctx.arc(289, y, 9, 0, Math.PI * 2);
+        ctx.fillStyle = "#67e8f9";
+        ctx.fill();
+      }
+
+      water.forEach((drop) => {
+        drop.x += drop.speed;
+        if (drop.x > 535) {
+          drop.x = 25;
+          drop.y = Math.random() * 250 + 55;
+        }
+
+        ctx.beginPath();
+        ctx.arc(drop.x, drop.y + Math.sin(frame / 32 + drop.wave) * 5, 5, 0, Math.PI * 2);
+        ctx.fillStyle = "#bae6fd";
+        ctx.fill();
+      });
+
+      drawLabel("weniger gel\u00f6ste Stoffe", 145, 34);
+      drawLabel("mehr gel\u00f6ste Stoffe", 440, 34);
+      drawLabel("semipermeable Membran", 300, 342);
+
+      frame += 1;
+      requestAnimationFrame(drawScene);
+    }
+
+    drawScene();
+  }
+</script>
+</body>
+</html>
