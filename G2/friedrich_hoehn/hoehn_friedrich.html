@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Subnautica - The Ecosystem of an uncharted planet. A web design project.">
+    <meta name="keywords" content="Subnautica, Survival, Ocean, Planet 4546B, Web Design">
+    <meta name="author" content="Friedrich Hoehn">
+    <meta name="robots" content="noindex">
+    <title>Subnautica</title>
+    <link rel="stylesheet" href="css/friedrich_hoehn.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header class="main-header">
+            <img src="assets/img/fh_Subnautica_logo.png" alt="Subnautica Logo" width="600" height="150" class="header-logo">
+            <p>Discovering the Ecosystem of an uncharted planet</p>
+        </header>
+
+        <nav class="main-nav" aria-label="Main Navigation">
+            <a href="../index.html" class="peeper-nav-link">
+                <img src="assets/img/fh_peeper.png" alt="Peeper" class="peeper-icon">
+            </a>
+            <ul>
+                <li><a href="#game-background">Background</a></li>
+                <li><a href="#game-story">The Story</a></li>
+                <li><a href="#gameplay">Gameplay</a></li>
+                <li><a href="#ocean-exploration">Biomes</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="game-background" class="standard-section">
+                <h2>Game Background</h2>
+                <dl class="info-grid">
+                    <div class="info-item">
+                        <dt>Developer:</dt>
+                        <dd>Unknown Worlds Entertainment</dd>
+                    </div>
+                    <div class="info-item">
+                        <dt>Genre:</dt>
+                        <dd>Survival-Action-Adventure</dd>
+                    </div>
+                    <div class="info-item">
+                        <dt>Early Access:</dt>
+                        <dd>December 2014</dd>
+                    </div>
+                    <div class="info-item">
+                        <dt>Release:</dt>
+                        <dd>January 2018</dd>
+                    </div>
+                </dl>
+                <p>Subnautica is an underwater survival game that combines exploration, resource management, and a compelling story. The player must learn to adapt to an unknown alien environment on an ocean planet.</p>
+            </section>
+
+            <section id="game-story" class="standard-section">
+                <h2>The Story</h2>
+                <p>After the crash of the spaceship Aurora, the protagonist Ryley Robinson is stranded on the ocean planet 4546B. Left to fend for themselves, they begin a fight for survival against hunger, thirst, mysterious sea creatures, and an unknown virus wich has befallen the entire planet.</p>
+                <div class="ship-container">
+                    <img src="assets/img/fh_aurora_crashed.jpg" alt="The crashed Spaceship Aurora" width="800" height="450" id="aurora">
+                </div>
+            </section>
+
+            <section id="gameplay" class="standard-section">
+                <h2>Gameplay Features</h2>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <h2>Research &amp; Database</h2>
+                        <canvas id="data-canvas" width="400" height="250">
+                            Your browser does not support the HTML5 canvas tag.
+                        </canvas>
+                        <p>Your hand scanner is the most important tool to survive in this alien environment. By scanning plants, creatures, or alien tech, you unlock new blueprints and store everything in your PDA. It’s the best way understand how the planet works and to discover the secret it hides.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <h2>Crafting System</h2>
+                        <img src="assets/img/fh_crafting.jpg" alt="crafting system placeholder" width="800" height="450">
+                        <p>You won’t survive long without crafting: everything you scavenge from the ocean floor can be turned into useful gear at the fabricator. Whether you need to filter water, cook food, or build tools for your trips, this is where it happens. It is essential to progress and gear up for the challenges of the deeper ocean.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <h2>Base Building</h2>
+                        <img src="assets/img/fh_base.jpg" alt="Base Building Placeholder" width="400" height="250">
+                        <p>Construct your own underwater sanctuary using the habitat builder to create a safe haven against the harsh pressures of the deep sea. Your base can be expanded with modular compartments, observation rooms, and functional areas like scanner rooms or massive alien aquariums. It serves as a necessary hub for resource storage, power generation, and specialized crafting stations to support your long-term exploration.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <h2>Exploration</h2>
+                        <img src="assets/img/fh_exploration.jpg" alt="Vehicle Exploration" width="400" height="250">
+                        <p>Exploration is the heart of Subnautica, driving you to venture into deeper, more dangerous biomes to uncover the planet's secrets. You will need to upgrade your vehicle fleet, from the agile Seaglide to the versatile Seamoth and the massive, mobile Cyclops submarine. Each vehicle allows you to dive deeper, and withstand the extreme conditions of the uncharted ocean.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="ocean-exploration" class="standard-section">
+                <h2>Overview of 4546B's Biomes</h2>
+                <p>Scroll through the window below to dive deeper into the ocean!</p>
+            </section>
+
+            <div id="ocean-scroll-container">
+                <div id="ui-wrapper">
+                    <svg id="o2-warning" width="50" height="50" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="38" stroke="#FFC300" stroke-width="6" fill="rgba(6, 17, 34, 0.9)" />
+                        <text x="50" y="62" font-family="Aileron" font-size="35" font-weight="bold" fill="#FFC300" text-anchor="middle">O2</text>
+                    </svg>
+                    <div id="depth-display">Depth: 0m</div>
+                </div>
+
+                <div id="ocean">
+                    <section id="safe-shallows" class="biome">
+                        <div class="biome-text">
+                            <h2>Safe Shallows</h2>
+                        </div>
+                        <div class="biome-gallery">
+                            <div class="image-box">
+                                <img src="assets/img/fh_ss.jpg" alt="Safe Shallows Environment" width="800" height="450">
+                            </div>
+                            <div class="media-box">
+                                <video controls poster="assets/img/fh_video_poster.jpg" class="responsive-video">
+                                    <source src="assets/video/fh_gasopod.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="kelp-forest" class="biome">
+                        <div class="biome-text">
+                            <h2>Kelp Forest</h2>
+                        </div>
+                        <div class="biome-gallery">
+                            <div class="image-box">
+                                <img src="assets/img/fh_kf.jpg" alt="Kelp Forest Environment" width="800" height="450">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="mushroom-forest" class="biome">
+                        <div class="biome-text">
+                            <h2>Mushroom Forest</h2>
+                        </div>
+                        <div class="biome-gallery">
+                            <div class="image-box">
+                                <img src="assets/img/fh_mf.jpg" alt="Mushroom Forest Environment" width="800" height="450">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="blood-kelp" class="biome">
+                        <div class="biome-text">
+                            <h2>Blood Kelp Zone</h2>
+                        </div>
+                        <div class="biome-gallery">
+                            <div class="image-box">
+                                <img src="assets/img/fh_bk.jpg" alt="Blood Kelp Zone Environment" width="800" height="450">
+                            </div>
+                            <div class="image-box">
+                                <img src="assets/img/fh_gl.jpg" alt="The elusive Ghost Leviathan" width="800" height="450">
+                            </div>
+                            <div class="media-box">
+                                <audio controls class="game-audio">
+                                    <source src="assets/audio/fh_gl.mp3" type="audio/mpeg">
+                                    <p>Your browser does not support the audio element.</p>
+                                </audio>
+                                <p class="media-caption">Audio Log: Approach of a Ghost Leviathan</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="lost-river" class="biome">
+                        <div class="biome-text">
+                            <h2>Lost River</h2>
+                        </div>
+                        <div class="biome-gallery">
+                            <div class="image-box">
+                                <img src="assets/img/fh_lr.jpg" alt="Lost River Environment" width="800" height="450">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="lava-zone" class="biome">
+                        <div class="biome-text">
+                            <h2>Lava Zone</h2>
+                        </div>
+                        <div class="biome-gallery">
+                            <div class="image-box">
+                                <img src="assets/img/fh_lz.jpg" alt="Lava Zone Environment" width="800" height="450">
+                            </div>
+                            <div class="pdf-download-box">
+                                <h3>Classified: Enzyme 42</h3>
+                                <p>Download the Enzyme 42 research data here!</p>
+                                <a href="assets/pdf/fh_enzyme42.pdf" download="fh_enzyme42.pdf" target="_blank" class="action-btn">Download PDF</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="main-footer">
+            <p>&copy; 2026 Friedrich Hoehn. Created for Web Design &amp; Standards II.</p>
+        </footer>
+    </div> 
+
+    <script src="assets/js/friedrich_hoehn.js"></script>
+</body>
+</html>
