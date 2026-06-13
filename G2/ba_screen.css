@@ -32,6 +32,7 @@ address {
     position: relative;
     top: 50%;
     bottom: 50%;
+    float:left;
 }
 #navigation ul {
     list-style: none;
@@ -50,8 +51,7 @@ address {
 /* ID-Selektoren */
 #wrapper {
     margin: 0 auto;
-    padding: 20px;
-    width: 50%;
+    padding: auto;
 }
 
 #vorhang {
