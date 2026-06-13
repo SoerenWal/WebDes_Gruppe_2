@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-image: url(assets/kino_licht_sanft.gif);
+
+}
+address {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 10px;
+    width: 50%;
+}
+
+dt img {
+   margin: 35px;
+   width: 150px;
+   height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#header {
+    margin-top: 350px;
+    text-align: center;
+    color: #ffffff;
+}
+#header h1{
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+
+#header h2{
+    font-size: 2rem;
+}
+
+#navigation {
+    position: relative;
+    top: 90px;
+
+}
+#navigation ul {
+    list-style: none;
+    text-align: center;
+}
+
+#navigation li {
+    display: inline-block;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+#wrapper {
+    margin: 0 auto;
+    padding: auto;
+}
+
