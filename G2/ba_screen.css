@@ -28,10 +28,9 @@ address {
 }
 
 #navigation {
-    border: 1px solid rgb(0, 76, 255);
     position: relative;
-    top: 50%;
-    bottom: 50%;
+    top: 220px;
+
 }
 #navigation ul {
     list-style: none;
@@ -44,14 +43,17 @@ address {
     border-radius: 15px;
 }
 
+dt img {
+   margin: 35px;
+}
+
 /* Klassen-Selektoren */
 
 
 /* ID-Selektoren */
 #wrapper {
     margin: 0 auto;
-    padding: 20px;
-    width: 50%;
+    padding: auto;
 }
 
 #vorhang {
