@@ -11,3 +11,42 @@ pickers.forEach(picker => {
         ausblick.src = picker.dataset.image;
     });
 });
+
+const ctx = document.getElementById("abwaerts_logo").getContext("2d");
+
+// Hintergrund (dunkel)
+ctx.fillStyle = "#050505"; 
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+// Schriftstil (fett + geneigt)
+ctx.fillStyle = "#c40000"; // kräftiges Rot
+ctx.font = "bold italic 120px Arial Black, Impact, sans-serif";
+ctx.textAlign = "center";
+
+// Text zeichnen
+const text = "ABWÄRTS";
+const x = canvas.width / 2;
+const y = canvas.height / 2 + 20;
+
+ctx.fillText(text, x, y);
+
+// Unterstrich (rote Linie)
+const metrics = ctx.measureText(text);
+const textWidth = metrics.width;
+
+ctx.strokeStyle = "#c40000";
+ctx.lineWidth = 8;
+
+// Linie etwas unterhalb des Textes
+ctx.beginPath();
+ctx.moveTo(x - textWidth / 2, y + 20);
+ctx.lineTo(x + textWidth / 2, y + 20);
+ctx.stroke();
+
+const route = document.getElementById("karte");
+const button = document.getElementById("home-btn")
+
+route.forEach(route => {
+    home-btn.addEventListener("click", () => {
+        karte.src = "assets/karte_mit_route.svg";
+    })});
