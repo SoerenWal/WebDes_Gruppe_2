@@ -1,100 +1,118 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<!-- metadata -->
+<!DOCTYPE html>
+<html lang="de">
 <head>
-<title>XHTML</title>	
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="" content="" />
-
-<link href="ba_screen.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sprint-Start Analyse und Race Simulation" />
+    <meta name="keywords" content="Sprint, Laufbahn, Simulation" />
+    <meta name="author" content="Sandrino Werner" />
+    <title>Sprint Analyse - Race Simulation</title>
+    
+    <link rel="stylesheet" href="css/style_sprint.css" />
 </head>
-
-<!-- visible content -->
 <body>
-	<div id="wrapper">
-		<div id="header">
-			<h1>Willkommen auf unserer Gruppenseite!</h1>
-			<h2>WI_WS24-I_Gruppe_2</h2>
-		</div>
-		<div id="navigation">
-			<ul>
-				<li>
-					<dl>
-						<dt>
-							<img src="assets/img_soeren_1198x1695.jpg" width="150px" alt="Image of Friedrich Höhn" title="Friedrich Höhn">
-						</dt>
-						<dd>
-							<p>Friedrich Höhn</p>
-						</dd>
-					</dl>
-				</li>
-				<li>
-					<dl>
-						<dt>
-							<img src="assets/img_soeren_1198x1695.jpg" width="150px" alt="Image of Hajar Achahbar Bouzit" title="Hajar Achahbar Bouzit">
-						</dt>
-						<dd>
-							<p>Hajar Achahbar Bouzit</p>
-						</dd>
-					</dl>
-				</li>
-				<li>
-					<dl>
-						<dt>
-							<img src="assets/img_soeren_1198x1695.jpg" width="150px" alt="Image of Marvin Berg" title="Marvin Berg">
-						</dt>
-						<dd>
-							<p>Marvin Berg</p>
-						</dd>
-					</dl>
-				</li>
-			</ul>
-			<ul>
-				<li>
-					<dl>
-						<dt>
-							<img src="assets/img_soeren_1198x1695.jpg" width="150px" alt="Image of Sandrino Werner" title="Sandrino Werner">
-						</dt>
-						<dd>
-							<p>Sandrino Werner</p>
-						</dd>
-					</dl>
-				</li>
-				<li>
-					<dl>
-						<dt>
-							<img src="assets/img_soeren_1198x1695.jpg" width="150px" alt="Image of Sören Walther" title="Sören Walther">
-						</dt>
-						<dd>
-							<p>Sören Walther</p>
-						</dd>
-					</dl>
-				</li>
-				<li>
-					<dl>
-						<dt>
-							<img src="assets/img_soeren_1198x1695.jpg" width="150px" alt="Image of Tom Bartels" title="Tom Bartels">
-						</dt>
-						<dd>
-							<p>Tom Bartels</p>
-						</dd>
-					</dl>
-				</li>
-			</ul>
-		</div>
-		<div id="content">
-			<h1 class="level_1">Überschrift</h1>
-			<h2 class="level_2">Überschrift</h2>
-			<h1 class="level_1">Überschrift</h1>
-			<h1 class="level_1">Überschrift</h1>
-			<h2 class="level_2">Überschrift</h2>
-			<h2 class="level_2">Überschrift</h2>
-		</div><!-- #content -->
-		<div id="footer">
-			<address>Berufsakademie Rhein-Main &middot; Am Schwimmbad 3 &middot; D-63322 Rödermark</address>
-		</div>
-	</div> <!-- wrapper -->
-</body>
 
+    <header>
+        <div class="website_name">SPRINT LAB</div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Zur Gruppenseite</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header_logo">
+            <img src="assets/img/blitzlogo.png" alt="SPRINT LAB Logo" width="40" height="40" />
+        </div>
+    </header>
+
+    <main class="dashboard">
+        <div class="main-content">
+            
+            <section id="race-simulation">
+                <h1>Race Track</h1>
+                <div class="canvas-container">
+                    <img src="assets/img/laufbahn_100m.svg" alt="100m Laufbahn" id="track-svg" />
+                    <canvas id="sprintCanvas" height="400" width="800">
+                        Ihr Browser unterstützt das Canvas-Element nicht.
+                    </canvas>
+                </div>
+                
+                <div class="audio-box">
+                    <h2>Start-Signal</h2>
+                    <audio id="start-signal" controls="controls">
+                        <source src="assets/audio/startschuss.mp3" type="audio/mpeg" />
+                        Audio-Element wird vom Browser nicht unterstützt.
+                    </audio>
+                </div>
+            </section>
+
+            <section id="technik-analyse">
+                <h1>Technik-Analyse</h1>
+                <div id="analyse-wrapper">
+                    <figure class="video-container">
+                        <video controls="controls" width="600" poster="assets/img/thumbnail_sprint_start.png">
+                            <source src="assets/video/sprint_start.mp4" type="video/mp4" />
+                            <source src="assets/video/sprint_start.webm" type="video/webm" />
+                            <source src="assets/video/sprint_start.ogv" type="video/ogv" />
+                            Video-Element wird nicht unterstützt.
+                        </video>
+                        <figcaption>Videoanalyse des Sprintstarts</figcaption>
+                    </figure>
+                    
+                    <article class="technik-checklist">
+                        <h3>Start Technik Checkliste</h3>
+                        <ul>
+                            <li>Oberkörper niedrig</li>
+                            <li>Hüfte hoch</li>
+                            <li>Fokus nach vorn</li>
+                            <li>Kraftvoller Abdruck</li>
+                            <li>Explosiver Armzug</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <aside class="sidebar">
+                <h3>Distanz wählen</h3>
+                <select id="distance-select">
+                    <option value="30">30m</option>
+                    <option value="60">60m</option>
+                    <option value="100">100m</option>
+                </select>
+
+                <div class="time-inputs">
+                    <label for="lane1">Bahn 1 Zeit:</label>
+                    <input type="text" id="lane1" placeholder="00.00s" />
+                    <label for="lane2">Bahn 2 Zeit:</label>
+                    <input type="text" id="lane2" placeholder="00.00s" />
+                    <label for="lane3">Bahn 3 Zeit:</label>
+                    <input type="text" id="lane3" placeholder="00.00s" />
+                    <label for="lane4">Bahn 4 Zeit:</label>
+                    <input type="text" id="lane4" placeholder="00.00s" />
+                </div>
+
+                <button id="start-sim-btn">STARTE SIMULATION</button>
+        </aside>
+        
+    </main>
+
+    <footer>
+        <section id="footer-info">
+            <img src="assets/img/blitzlogo.png" alt="SPRINT LAB Logo" width="200" height="200" />
+            <div class="coach-details">
+                <h2>Dein Coach: Sandrino Werner</h2>
+                <div class="pdf-downloads">
+                    <a href="assets/pdf/6W_Trainingsplan_100m.pdf" class="btn-pdf" aria-label="Trainingsplan für 100 Meter Sprint herunterladen">100m Trainingsplan</a>
+                    <a href="assets/pdf/6W_Trainingsplan_200m.pdf" class="btn-pdf" aria-label="Trainingsplan für 200 Meter Sprint herunterladen">200m Trainingsplan</a>
+                    <a href="assets/pdf/6W_Trainingsplan_400m.pdf" class="btn-pdf" aria-label="Trainingsplan für 400 Meter Sprint herunterladen">400m Trainingsplan</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
 </html>

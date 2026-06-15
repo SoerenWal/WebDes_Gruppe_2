@@ -1,0 +1,289 @@
+/*
+1. GLOBAL STYLES & RESET
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Poppins', Arial, sans-serif;
+    padding-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;  
+}
+
+/*
+2. HEADER & NAVIGATION
+*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #2d2d2d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 10;
+}
+
+header .website_name {
+    color: #CCFF00;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+header nav ul li a:hover {
+    color: #CCFF00;
+}
+
+header .header_logo img {
+    border-radius: 50%;
+    margin-top: 7px;
+    object-fit: cover;
+    border: 2px solid #CCFF00;
+}
+
+/*
+   3. Mittelpart
+*/
+
+   .dashboard {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    width: 70%;
+    min-width: 400px;
+    max-width: 1400px;
+    margin: auto;
+    gap: 30px;
+    padding: 0 20px;
+    flex: 1;
+}
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#race-simulation h1, #technik-analyse h1 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+.canvas-container {
+    position: relative;
+    width: 100%;
+    background-color: #1a1a1a;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    border: 1px solid #2d2d2d;
+}
+
+#track-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#sprintCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.audio-box {
+    margin-top: 100px;
+}
+
+.audio-box h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+
+#analyse-wrapper {
+    background-color: #1a1a1a;
+    border: 1px solid #2d2d2d;
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.video-container video {
+    border-radius: 25px;
+    border: 3px solid #2d2d2d;
+    background-color: #000000;
+}
+
+.video-container figcaption {
+    margin-top: 5px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.technik-checklist {
+    background-color: #121212;
+    border-radius: 25px;
+    padding: 25px;
+    margin-top:45px;
+    flex: 1;
+    border: 1px solid #2d2d2d;
+}
+
+.technik-checklist h3 {
+    color: #CCFF00;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.technik-checklist ul {
+    list-style-position: inside;
+    line-height: 2;
+}
+
+/*
+3. Simulations Sidebar
+*/
+.sidebar {
+    background-color: #1a1a1a;
+    border-radius: 25px;
+    padding: 25px;
+    height: fit-content;
+    border: 1px solid #2d2d2d;
+}
+
+.sidebar h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.sidebar select, .sidebar input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #121212;
+    border: 1px solid #2d2d2d;
+    border-radius: 12px;
+    color: #ffffff;
+    font-family: inherit;
+    margin-bottom: 25px;
+}
+
+.sidebar select:focus, .sidebar input:focus {
+    outline: none;
+    border-color: #CCFF00;
+}
+
+#start-sim-btn {
+    display: block;
+    width: 100%;
+    background-color: #CCFF00;
+    color: #121212;
+    border: none;
+    padding: 15px;
+    font-weight: 700;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#start-sim-btn:hover {
+    transform: scale(1.02);
+    background-color: #b3df00;
+}
+
+/*  
+5. FOOTER  
+*/
+
+footer {
+    background-color: #1a1a1a;
+    border-top: 1px solid #2d2d2d;
+    padding: 40px 0;
+    margin-top: 60px;
+    border-radius: 25px 25px 0 0;
+}
+
+#footer-info {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+#footer-info img {
+    border-radius: 25px;
+    object-fit: cover;
+    border: 1px solid #2d2d2d;
+}
+
+.coach-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.coach-details h2 {
+    font-size: 18px;
+}
+
+.pdf-downloads {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-pdf {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 1px solid #CCFF00;
+    color: #CCFF00;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-pdf:hover {
+    background-color: #CCFF00;
+    color: #121212;
+}
