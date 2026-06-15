@@ -4,11 +4,11 @@
 }
 
 body {
-    position: relative;
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
     background-repeat: no-repeat;
     background-image: url(assets/kino_licht_sanft.gif);
+    background-position: center top;
 }
 
 dt img {
@@ -28,7 +28,7 @@ a:hover{
 }
 
 #header {
-    margin-top: 280px;
+    padding-top: 280px;
     text-align: center;
     color: #ffffff;
 }
