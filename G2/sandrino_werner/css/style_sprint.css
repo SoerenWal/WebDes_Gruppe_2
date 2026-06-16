@@ -134,13 +134,13 @@ header .header_logo img {
     font-size: 22px;
 }
 
-
 #analyse-wrapper {
     background-color: #1a1a1a;
     border: 1px solid #2d2d2d;
     border-radius: 25px;
     padding: 25px;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     align-items: flex-start;
 }
