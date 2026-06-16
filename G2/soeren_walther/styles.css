@@ -385,6 +385,10 @@ header li:hover {
     color: var(--light);
 }
 
+#lage_2 object {
+
+}
+
 #lage_layout {
     display: flex;
     flex-direction: row;
