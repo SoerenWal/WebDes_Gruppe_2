@@ -49,9 +49,9 @@ ctx.lineTo(x + textWidth / 2, y + 20);
 ctx.stroke();
 
 const karte = document.getElementById("karte");
-const button = document.getElementById("home-btn")
+const button = document.getElementById("home-btn");
 
-route.forEach(route => {
-    button.addEventListener("click", () => {
-        karte.src = "assets/karte_mit_route.svg";
-    })});
+button.addEventListener("click", () => {
+    karte.src = "assets/karte_mit_route.svg";
+});
+

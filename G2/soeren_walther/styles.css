@@ -151,13 +151,17 @@ header li:hover {
     color: var(--light);
 }
 
-#architektur-cards {
+#architektur-flex {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
-    width: 100%;
     color: var(--light);
+}
+
+#architektur-flex img {
+    width: auto;
+    height: 20rem;
 }
 
 #architektur-text {
@@ -280,6 +284,11 @@ header li:hover {
     color: var(--light);
 }
 
+#architektur p {
+    width: 50%;
+    align-self: center;
+}
+
 
 
 #aufwaerts_abwaerts {
@@ -296,39 +305,36 @@ header li:hover {
 #aufwaerts-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
+    justify-content: center;
+    gap: 1rem;
     width: 100%;
-    max-width: 1200px;
-    align-items: flex-start;
 }
 
 #flex-links,
 #flex-rechts {
-    flex: 1 1 40rem;
-    min-width: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 40%;
     background: linear-gradient(0, var(--grau), 5%, black);
     padding: 1.5rem;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-#flex-links {
     color: var(--light);
+    text-align: center;
 }
 
-#flex-links img {
-    width: 100%;
-    max-width: 30rem;
-    height: auto;
-    margin-top: 1rem;
-    border-radius: 600px;
+#flex-links video {
+    width: auto;
+    height: 30rem;
+    border-radius: 15px;
 }
 
 #flex-rechts {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     gap: 1.5rem;
     color: var(--light);
 }
