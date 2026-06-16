@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Der Silberturm</title>
     <link rel="stylesheet" href="styles.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');</style>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
     <div id="space"></div>
     <section id="home">
         <!--https://new.express.adobe.com/-->
-        <img id="img_two" src="assets/silberturm_frontal.png" alt="Frontalansicht des Silberturms" height="7008" width="4672">
+        <img id="img_two" src="assets/silberturm_frontal_7008px_4672px.png" alt="Frontalansicht des Silberturms" height="7008" width="4672">
         <div id="home-text">
             <div id="home-text-hor">
                 <img id="deutschland" src="assets/deutschland_2560x1536.webp" alt="" height="2560" width="1536">
@@ -32,14 +33,17 @@
             </div>
             <h2>Silberturm</h2>
             <p>Die silberne Ikone</p>
-            <a id="home-btn" class="text-box" href="assets/Der Silberturm.pdf" target="_blank">PDF herunterladen</a>
+            <a id="home-btn" class="text-box" href="assets/silberturm.pdf" target="_blank">PDF herunterladen</a>
         </div>
     </section>
 
     <section id="lage" class="hero">
         <h2>Viele Wege.<br>Ein Ziel: der Silberturm.</h2>
         <video autoplay muted loop>
-            <source src="assets/silberturm_1080p_60fps.mp4" type="video/mp4" width="1080">
+            <source src="assets/silberturm_1080p_60fps.mp4" type="video/mp4">
+            <source src="assets/silberturm_1080p_60fps.ogv" type="video/ogv">
+            <source src="assets/silberturm_1080p_60fps.webm" type="video/webm">
+
         </video>
     </section>
 
@@ -62,18 +66,17 @@
     <section id="architektur">
         <h2>Architektur</h2>
             <p>Der Silberturm (ehemals Dresdner-Bank-Hochhaus) ist ein Bürohochhaus im Stil der Moderne beziehungsweise des Funktionalismus. Das Gebäude zeichnet sich durch seine zylindrische Grundform aus und prägt mit seiner markanten Architektur die Frankfurter Skyline. Seine Gestaltung folgt den Prinzipien einer funktionalen und klaren Formensprache, die typisch für die moderne Hochhausarchitektur ist.</p>
-            <div>
-                <div class="architektur-flex">
-                    <ul>
-                        <li>Bauzeit & Fertigstellung: 1975-1978</li>
-                        <li>Architekten: ABB Architekten: Apel, Beckert, Becker</li>
-                        <li>Gesamtmietfläche: 51.593 m²</li>
-                        <li>Büromietfläche: 42.884 m²</li>
-                        <li>Höhe: 166,7 m</li>
-                        <li>Geschosse oberirdisch: 36</li>
-                        <li><object data="assets/grundriss.svg" type=""></object></li>
-                    </ul>
-                </div>
+        <div>
+            <div class="architektur-flex">
+                <ul>
+                    <li>Bauzeit & Fertigstellung: 1975-1978</li>
+                    <li>Architekten: ABB Architekten: Apel, Beckert, Becker</li>
+                    <li>Gesamtmietfläche: 51.593 m²</li>
+                    <li>Büromietfläche: 42.884 m²</li>
+                    <li>Höhe: 166,7 m</li>
+                    <li>Geschosse oberirdisch: 36</li>
+                    <li><object data="assets/grundriss.svg" type="image/svg+xml"></object></li>
+                </ul>
             </div>
         </div>
         
@@ -88,7 +91,7 @@
                     <p>Ein spektakulärer Vorfall in Frankfurt sorgte für Aufsehen, als ein Mann ohne Sicherung den Silberturm bestieg. Dabei kletterte er in rund 166 Metern Höhe an der Fassade des Silberturms empor, lediglich in Cowboystiefeln und ohne jegliche Kletterausrüstung.</p>
                 </div>
                 <video autoplay muted loop>
-                    <source src="assets/klettern.mp4" type="video/mp4" width="720" height="1280">
+                    <source src="assets/klettern.mp4" type="video/mp4">
                     <source src="assets/klettern.webm" type="video/webm">
                     <source src="assets/klettern.ogv" type="video/ogv">
                 </video>
@@ -110,7 +113,7 @@
 
     <section id="ausblick">
         <h2>Atemberaubende Sicht auf Frankfurts Bahnhofsviertel</h2>
-        <img id="ausblick-wahl" src="assets/grau.jpg" width="300px" alt="Ausblick aus dem Silberturm bei grauem Himmel">
+        <img id="ausblick-wahl" src="assets/grau.jpg" width="3023" height="1741" alt="Ausblick aus dem Silberturm bei grauem Himmel">
         <p>Wählen Sie ihren Ausblick:</p>
         <div id="colorpicker">
             <div class="colorpicker" id="colorpicker-1" data-image="assets/grau.jpg">
