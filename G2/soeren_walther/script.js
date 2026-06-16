@@ -12,7 +12,12 @@ pickers.forEach(picker => {
     });
 });
 
-const ctx = document.getElementById("abwaerts_logo").getContext("2d");
+
+const canvas = document.getElementById("abwaerts_logo");
+const ctx = canvas.getContext("2d");
+
+canvas.width = 1050;
+canvas.height = 400;
 
 // Hintergrund (dunkel)
 ctx.fillStyle = "#050505"; 
@@ -43,10 +48,10 @@ ctx.moveTo(x - textWidth / 2, y + 20);
 ctx.lineTo(x + textWidth / 2, y + 20);
 ctx.stroke();
 
-const route = document.getElementById("karte");
+const karte = document.getElementById("karte");
 const button = document.getElementById("home-btn")
 
 route.forEach(route => {
-    home-btn.addEventListener("click", () => {
+    button.addEventListener("click", () => {
         karte.src = "assets/karte_mit_route.svg";
     })});
