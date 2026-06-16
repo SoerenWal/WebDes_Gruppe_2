@@ -129,8 +129,8 @@ header li:hover {
     position: absolute;
     z-index: 1;
     color: var(--light);
-    bottom: 40rem;
-    left: 40rem;
+    top: 50%;
+    left: 42%;
     text-align: center;
 }
 
@@ -173,6 +173,10 @@ header li:hover {
 
 #architektur ul {
     list-style-type: none;
+}
+
+#architektur object {
+    padding-top: 1rem;
 }
 
 .architektur-card img {
