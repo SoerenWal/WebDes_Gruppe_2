@@ -67,7 +67,7 @@ a{
     overflow: hidden;
     background-color: #E9E5D9;
     display: flex;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 }
 
 .card{
@@ -127,7 +127,7 @@ a{
     background-color: #E9E5D9;
     display: flex;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 }
 
 .pdf_card{
@@ -168,7 +168,7 @@ a{
     height: 100%;
     background-color: #2C2523;
     border: 2px solid #E9E5D9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
     display: flex;
     flex-direction: column;
 }
