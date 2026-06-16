@@ -9,27 +9,19 @@
 <link href="assets/favicon.ico" rel="shortcut icon" />
 <link href="css.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
-
 <div id="hero">
-  <p class="label">Biologie Lernpfad</p>
+  <p id="hero-label">Biologie Lernpfad</p>
   <h1>Ausflug in die Zelle</h1>
   <p>Verstehe Schritt f&uuml;r Schritt, wie eine Zelle aufgebaut ist und warum Wasser bei der Osmose in Bewegung ger&auml;t.</p>
-  <a class="hero-arrow" href="#lernpfad" aria-label="Zum Lernpfad springen">
-    <img src="assets/Pfeil.svg" alt="" width="32" height="32">
+  <a class="hero-arrow" href="#start">
+    <img src="assets/Pfeil.svg" alt="Pfeil" width="32" height="32">
   </a>
 </div>
 
 <div id="wrapper">
-  <div id="lernpfad" class="path-nav">
-    <a href="#station-1">1. Orientierung</a>
-    <a href="#station-2">2. Zellaufbau</a>
-    <a href="#station-3">3. Osmose</a>
-    <a href="#station-4">4. Selbstcheck</a>
-  </div>
-
-  <section id="station-1" class="station">
+  <div id="start"></div>
+  <section class="section">
     <p class="label">Station 1</p>
     <h2>Warum Zellen wichtig sind</h2>
     <p class="intro">
@@ -43,7 +35,7 @@
     </div>
   </section>
 
-  <section id="station-2" class="station">
+  <section class="section">
     <p class="label">Station 2</p>
     <h2>Wie ist eine Zelle aufgebaut?</h2>
     <p class="intro">
@@ -51,7 +43,7 @@
       das Cytoplasma f&uuml;llt den Innenraum, und Organellen &uuml;bernehmen bestimmte Aufgaben.
     </p>
 
-    <div class="row media-row">
+    <div class="row">
       <div class="box">
         <h3>Modell einer Zelle</h3>
         <object data="assets/Cell.svg" type="image/svg+xml" width="300" height="300"></object>
@@ -62,27 +54,27 @@
       </div>
     </div>
 
-    <div class="concept-grid">
-      <div class="concept-card">
+    <div class="organelles-grid">
+      <div class="box">
         <h3>Zellmembran</h3>
         <p>Sie grenzt die Zelle ab und kontrolliert, welche Stoffe hinein- oder hinausgelangen.</p>
       </div>
-      <div class="concept-card">
+      <div class="box">
         <h3>Cytoplasma</h3>
         <p>Diese gelartige Grundsubstanz f&uuml;llt die Zelle und erm&ouml;glicht Stofftransport im Inneren.</p>
       </div>
-      <div class="concept-card">
+      <div class="box">
         <h3>Zellkern</h3>
         <p>Er enth&auml;lt die DNA und steuert viele Vorg&auml;nge, zum Beispiel Wachstum und Zellteilung.</p>
       </div>
-      <div class="concept-card">
+      <div class="box">
         <h3>Mitochondrien</h3>
         <p>Sie wandeln Energie aus N&auml;hrstoffen in nutzbare Energie f&uuml;r die Zelle um.</p>
       </div>
     </div>
   </section>
 
-  <section id="station-3" class="station">
+  <section class="section">
     <p class="label">Station 3</p>
     <h2>Osmose leicht erkl&auml;rt</h2>
     <p class="intro">
@@ -96,27 +88,31 @@
       Dadurch kann eine Zelle Wasser aufnehmen oder abgeben.
     </div>
 
-    <div class="row media-row osmosis-row">
+    <div class="row osmosis-row">
       <div class="box osmosis-card">
         <h3>Canvas-Animation</h3>
-        <canvas id="osmosisCanvas" width="600" height="360" role="img" aria-label="Animation der Osmose: Wassermolek&uuml;le bewegen sich durch eine semipermeable Membran in eine Zelle.">
+        <canvas id="osmosisCanvas" width="600" height="360">
           Dein Browser unterst&uuml;tzt das Canvas-Element nicht.
         </canvas>
       </div>
       <div class="box osmosis-card">
         <h3>Osmose im Video</h3>
         <div class="video-grid">
-          <div class="video-item">
+          <div>
             <h4>Wasser str&ouml;mt in die Zelle</h4>
             <video class="osmosis-video" controls>
               <source src="assets/Roh_Schwamm-Aufsaugen.mp4" type="video/mp4">
+              <source src="assets/Roh_Schwamm-Aufsaugen.mov" type="video/mov">
+              <source src="assets/Roh_Schwamm-Aufsaugen.webm" type="video/webm">
               Das Video kann nicht geladen werden.
             </video>
           </div>
-          <div class="video-item">
+          <div>
             <h4>Wasser str&ouml;mt aus der Zelle</h4>
             <video class="osmosis-video" controls>
               <source src="assets/Roh_Schwamm-Verlassen.mp4" type="video/mp4">
+              <source src="assets/Roh_Schwamm-Verlassen.mov" type="video/mov">
+              <source src="assets/Roh_Schwamm-Verlassen.webm" type="video/webm">
               Das Video kann nicht geladen werden.
             </video>
           </div>
@@ -125,24 +121,41 @@
     </div>
   </section>
 
-  <section id="station-4" class="station">
+  <section class="section">
     <p class="label">Station 4</p>
     <h2>Selbstcheck</h2>
     <div class="check-list">
-      <details>
+      <details class="detail-box">
         <summary>Warum ist die Zellmembran f&uuml;r Osmose entscheidend?</summary>
         <p>Weil sie als semipermeable Grenze wirkt: Wasser kann hindurch, viele gel&ouml;ste Stoffe nicht.</p>
       </details>
-      <details>
+      <details class="detail-box">
         <summary>In welche Richtung bewegt sich Wasser bei der Osmose?</summary>
         <p>Zur Seite mit der h&ouml;heren Konzentration gel&ouml;ster Teilchen, bis ein Ausgleich entsteht.</p>
       </details>
-      <details>
+      <details class="detail-box">
         <summary>Was passiert mit einer Zelle, wenn sie viel Wasser aufnimmt?</summary>
         <p>Sie wird gr&ouml;&szlig;er und baut Druck auf. Bei Pflanzenzellen sorgt dieser Druck f&uuml;r Stabilit&auml;t.</p>
       </details>
     </div>
   </section>
+  <section class="section">
+    <p class="label"> Station 5</p>
+    <h2>Mystisches Audio</h2>
+    <audio controls>
+      <source src="assets/Mystisches_Audio.mp3" type="audio/mp3">
+      Dein Browser unterst&uuml;tzt das Audio-Element nicht.
+    </audio>
+  </section>
+  <section class="section">
+    <a href="assets/WebPDF.pdf" target="_blank" >Inhalt als PDF</a>
+  </section>
+  
+  <footer>
+    <p>&copy; 2026 Marvin Berg</p>
+  </footer>
+
+
 </div>
 
 <script>

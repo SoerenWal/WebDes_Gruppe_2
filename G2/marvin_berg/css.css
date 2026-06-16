@@ -1,21 +1,19 @@
-/* Reset für eigene Eigenschaften */
 * {
   margin: 0;
   padding: 0;
 }
 
+@keyframes gradientMove {
+  0% { background-position: 0%; }
+  50% { background-position: 100%; }
+  100% { background-position: 0%; }
+}
 
 body {
   font-family: Segoe UI, Helvetica, sans-serif;
   background: linear-gradient(270deg, #0f172a, #020617, #1e3a8a);
   background-size: 600% 600%;
   animation: gradientMove 15s ease infinite;
-}
-
-@keyframes gradientMove {
-  0% {background-position: 0%}
-  50% {background-position: 100%}
-  100% {background-position: 0%}
 }
 
 h2 {
@@ -32,16 +30,20 @@ h4 {
   color: #0f766e;
 }
 
-img, video {
+img, video, object{
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-object {
-  width: 100%;
-  max-width: 330px;
-  height: 330px;
+footer {
+  width: 12%;
+  margin: 0 auto 0px auto;
+  text-align: center;
+  color: #0f766e;
+  padding: 8px;
+  background: white;
+  border-radius: 8px;
 }
 
 #hero {
@@ -52,11 +54,6 @@ object {
   flex-direction: column;
   text-align: center;
   color: white;
-}
-
-#hero .label {
-  color: #a7f3d0;
-  font-size: 1rem;
 }
 
 #hero h1 {
@@ -70,22 +67,25 @@ object {
   font-size: 1.25rem;
 }
 
+#hero-label {
+  color: #a7f3d0;
+}
+
 .hero-arrow {
   position: absolute;
   bottom: 30px;
   left: 50%;
   width: 32px;
   height: 32px;
-  transition: 0.2s;
-}
-
-.hero-arrow:hover {
-  transform: translateY(-4px);
 }
 
 .hero-arrow img {
   width: 32px;
   height: 32px;
+}
+
+.hero-arrow:hover {
+  transform: translateY(-4px);
 }
 
 .label {
@@ -95,16 +95,6 @@ object {
   font-weight: 700;
   letter-spacing: 0.06rem;
   text-transform: uppercase;
-}
-
-.path-nav a {
-  text-decoration: none;
-}
-
-#wrapper {
-  width: 80%;
-  max-width: 1120px;
-  margin: 40px auto 50px auto;
 }
 
 .path-nav {
@@ -119,14 +109,18 @@ object {
 }
 
 .path-nav a {
+  text-decoration: none;
   padding: 10px 14px;
   color: #0f766e;
   background: #ecfeff;
   font-weight: 700;
 }
 
-.station {
-  margin-bottom: 28px;
+.section {
+  width: 80%;
+  max-width: 1120px;
+  margin: 0px auto 0px auto;
+  margin-bottom: 40px;
   padding: 30px;
   background: white;
   border-radius: 8px;
@@ -136,10 +130,11 @@ object {
 .intro {
   max-width: 860px;
   font-size: 1.05rem;
+  margin-bottom: 30px;
 }
 
 .note {
-  margin-top: 16px;
+  margin-bottom: 20px;
   padding: 16px;
   color: #3b2f05;
   background: #fef3c7;
@@ -153,47 +148,40 @@ object {
   width: 100%;
 }
 
-.media-row {
-  margin-top: 20px;
-}
-
 .osmosis-row {
   grid-template-columns: 0.9fr 1.1fr;
 }
 
-.box,
-.concept-card,
-details {
+.box {
   border: 1px solid #dbe8ea;
   border-radius: 8px;
   background: #f8fbfc;
-}
-
-.box {
   padding: 18px;
+  transition: 0.2s;
   text-align: center;
 }
 
-.concept-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
-  margin-top: 22px;
+.box h3 {
+  color: #0f766e;
 }
 
-.concept-card {
-  padding: 16px;
-  transition: 0.2s;
-}
-
-.concept-card:hover,
 .box:hover {
   border-color: #14b8a6;
   box-shadow: 0 12px 24px rgba(20, 184, 166, 0.12);
 }
 
-.concept-card h3 {
-  color: #0f766e;
+.detail-box {
+  border: 1px solid #dbe8ea;
+  border-radius: 8px;
+  background: #f8fbfc;
+  padding: 18px;
+}
+
+.organelles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 22px;
 }
 
 #osmosisCanvas {
@@ -205,24 +193,15 @@ details {
   background: #0b3558;
 }
 
-.osmosis-video {
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
-
 .video-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
 }
 
-.check-list {
-  display: grid;
-  gap: 12px;
-}
-
-details {
-  padding: 14px 16px;
+.video-grid video{
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
 
 summary {
@@ -235,21 +214,22 @@ details p {
   margin: 12px 0 0 0;
 }
 
+.check-list {
+  display: grid;
+  gap: 12px;
+}
+
 @media (max-width: 900px) {
   #hero h1 {
     font-size: 3rem;
   }
 
   #wrapper {
-    width: 92%;
-  }
-
-  .station {
-    padding: 22px;
+    width: 90%;
   }
 
   .row,
-  .concept-grid,
+  .organelles-grid,
   .video-grid {
     grid-template-columns: 1fr;
   }
